@@ -15,52 +15,52 @@
     </head>
     
     <body>
-        <div class="">
+        <div class="container">
             <div class="container-form">
                 <h4 class="error">${error}</h4>
-                <h1>Register Form</h1> <hr/>
-                
-                <form action="RegisterController" method="POST">
-                    <div>
+                <h1>Register Form</h1>
+                <hr/>
+                <form action="register" method="POST">
+                    <div class="form-group">
                         <label>First name</label>
-                        <input type="text" placeholder="Enter first name" name="firstname"/>
+                        <input type="text" class="form-control" placeholder="Enter first name" name="firstname"/>
                     </div>
                     <div>
                         <label>Last name</label>
-                        <input type="text" placeholder="Enter last name" name="lastname"/>
+                        <input type="text" class="form-control" placeholder="Enter last name" name="lastname"/>
                     </div>
                     <div>
                         <label>Date of birth</label>
-                        <input type="date" name="dob"/>
+                        <input type="date" class="form-control" name="dob"/>
                     </div>
                     <div>
                         <label>Gender</label>
                         <div>
-                            <input type="radio" name="gender" value="1"/> Male
-                            <input type="radio" name="gender" value="0"/> Female
+                            <input type="radio" name="gender" value="1" class="gender"/> Male
+                            <input type="radio" name="gender" value="0" class="gender"/> Female
                         </div>
                     </div>
-                    <div>
+                    <div class="form-group" >
                         <label>Address</label>
-                        <input type="text" placeholder="Enter address" name="address"/>
+                        <input type="text" class="form-control" placeholder="Enter address" name="address"/>
                     </div>
                     <div>
                         <label>Telephone number</label>
-                        <input type="text" placeholder="Enter telephone number" name="telephone"/>
+                        <input type="text" class="form-control" placeholder="Enter telephone number" name="telephone"/>
                     </div>
                     <div>
                         <label>Email</label>
-                        <input type="email" placeholder="Enter email" name="email"/>
+                        <input type="email" class="form-control" placeholder="Enter email" name="email"/>
                     </div>
-                    <div>
+                    <div class="form-group">
                         <label>Specialized</label>
-                        <select name="specialized">
-                            <option value="1">Software engineering</option>
-                            <option value="2">Business administration</option>
-                            <option value="3">Artificial intelligence</option>
+                        <select class="form-control" name="specialized">
+                            <option value="4">Software engineering</option>
+                            <option value="5">Business administration</option>
+                            <option value="6">Artificial intelligence</option>
                         </select>
                     </div>
-                    <button type="submit">register</button>
+                    <button type="submit" class="btn btn-primay">register</button>
                 </form>
             </div>
         </div>

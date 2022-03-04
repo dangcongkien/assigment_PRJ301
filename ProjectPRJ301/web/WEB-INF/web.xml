@@ -4,9 +4,17 @@
         <servlet-name>RegisterController</servlet-name>
         <servlet-class>Controller.student.RegisterController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CampusController</servlet-name>
+        <servlet-class>Controller.student.CampusController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>RegisterController</servlet-name>
         <url-pattern>/student/register</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CampusController</servlet-name>
+        <url-pattern>/student/campus</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

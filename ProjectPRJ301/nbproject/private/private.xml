@@ -2,6 +2,12 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/Admin/OneDrive/Documents/NetBeansProjects/ProjectPRJ301/src/java/Controller/student/RegisterController.java</file>
+            <file>file:/C:/Users/Admin/OneDrive/Documents/NetBeansProjects/ProjectPRJ301/src/java/dal/CampusDBContext.java</file>
+            <file>file:/C:/Users/Admin/OneDrive/Documents/NetBeansProjects/ProjectPRJ301/src/java/Controller/student/CampusController.java</file>
+            <file>file:/C:/Users/Admin/OneDrive/Documents/NetBeansProjects/ProjectPRJ301/web/register/register.jsp</file>
+            <file>file:/C:/Users/Admin/OneDrive/Documents/NetBeansProjects/ProjectPRJ301/web/register/selectcampus.jsp</file>
+        </group>
     </open-files>
 </project-private>
