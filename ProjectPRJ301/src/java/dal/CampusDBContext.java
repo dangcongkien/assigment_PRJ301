@@ -13,9 +13,9 @@ import java.util.logging.Logger;
 public class CampusDBContext extends DBContext{
     public String getCampus(int id) {
         try {
-            String sql = "Select name from Campus where id = '"+ id +"'";
+            String sql = "Select name from Campus where id = '?'";
             PreparedStatement stm = connection.prepareCall(sql);
-//            stm.setInt(1, id);
+            stm.setInt(1, id);
             ResultSet rs = stm.executeQuery(sql);
             while (rs.next()) {
                 String name = rs.getString(1);
