@@ -25,9 +25,10 @@ public class CampusController extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
         
-        }
-    
+        
+    }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -41,7 +42,7 @@ public class CampusController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        request.getRequestDispatcher("/register/selectcampus.jsp").forward(request, response);
+        request.getRequestDispatcher("/selectcampus.jsp").forward(request, response);
     }
 
     /**
@@ -60,7 +61,8 @@ public class CampusController extends HttpServlet {
         HttpSession session = request.getSession();
         session.setAttribute("campusId", campusId);
         
-        response.sendRedirect("../register/register.jsp");
+        response.sendRedirect("register.jsp");
+        
     }
 
     /**

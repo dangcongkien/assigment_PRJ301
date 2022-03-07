@@ -10,11 +10,11 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>CampusController</servlet-name>
-        <url-pattern>/student/campus</url-pattern>
+        <url-pattern>/campus</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>RegisterController</servlet-name>
-        <url-pattern>/student/register</url-pattern>
+        <url-pattern>/register</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -1,4 +1,4 @@
-package org.apache.jsp.register;
+package org.apache.jsp;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -59,14 +59,14 @@ public final class register_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</h4>\n");
       out.write("                <h1>Register Form</h1>\n");
       out.write("                <hr/>\n");
-      out.write("                <form action=\"registerrr\" method=\"POST\">\n");
+      out.write("                <form action=\"register\" method=\"POST\">\n");
       out.write("                    <div class=\"form-group\">\n");
       out.write("                        <label>First name</label>\n");
-      out.write("                        <input type=\"text\" class=\"form-control\" placeholder=\"Enter first name\" name=\"firstname\"/>\n");
+      out.write("                        <input type=\"text\" class=\"form-control\" placeholder=\"Enter first name\" name=\"firstName\"/>\n");
       out.write("                    </div>\n");
       out.write("                    <div>\n");
       out.write("                        <label>Last name</label>\n");
-      out.write("                        <input type=\"text\" class=\"form-control\" placeholder=\"Enter last name\" name=\"lastname\"/>\n");
+      out.write("                        <input type=\"text\" class=\"form-control\" placeholder=\"Enter last name\" name=\"lastName\"/>\n");
       out.write("                    </div>\n");
       out.write("                    <div>\n");
       out.write("                        <label>Date of birth</label>\n");
@@ -85,7 +85,7 @@ public final class register_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    </div>\n");
       out.write("                    <div>\n");
       out.write("                        <label>Telephone number</label>\n");
-      out.write("                        <input type=\"text\" class=\"form-control\" placeholder=\"Enter telephone number\" name=\"telephone\"/>\n");
+      out.write("                        <input type=\"text\" class=\"form-control\" placeholder=\"Enter telephone number\" name=\"phoneNumber\"/>\n");
       out.write("                    </div>\n");
       out.write("                    <div>\n");
       out.write("                        <label>Email</label>\n");

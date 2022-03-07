@@ -4,7 +4,7 @@ JSP
 *S JSP
 *F
 + 0 register.jsp
-register/register.jsp
+register.jsp
 *L
 1,13:44
 14:57,3

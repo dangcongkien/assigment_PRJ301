@@ -26,9 +26,10 @@ public class RegisterController extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
         HttpSession session = request.getSession();
+
         int campusId = (int) session.getAttribute("campusId");
-        
         String firstName = request.getParameter("firstName");
         String lastName = request.getParameter("lastName");
         String dob = request.getParameter("dob");
@@ -38,23 +39,19 @@ public class RegisterController extends HttpServlet {
         String email = request.getParameter("email");
         int specializedId = Integer.parseInt(request.getParameter("specialized"));
         
-        if(firstName == null || firstName.isEmpty() || lastName == null || lastName.isEmpty()
-                || dob== null || dob.isEmpty() || gender == null || gender.isEmpty()
+        if (firstName == null || firstName.isEmpty() || lastName == null || lastName.isEmpty()
+                || dob == null || dob.isEmpty() || gender == null || gender.isEmpty()
                 || address == null || address.isEmpty() || phoneNumber == null || phoneNumber.isEmpty()
                 || email == null || email.isEmpty()) {
             request.setAttribute("error", "You have not filled in all the information");
-            request.getRequestDispatcher("/register/register.jsp").forward(request, response);
+            request.getRequestDispatcher("/register.jsp").forward(request, response);
         } else {
             int genders = Integer.parseInt(gender);
             StudentDBContext db = new StudentDBContext();
             db.insertStudent(firstName, lastName, dob, genders, address, phoneNumber, email, specializedId, campusId);
-            
             request.setAttribute("success", "You have successfully registered");
-            request.getRequestDispatcher("/register/success.jsp").forward(request, response);
+            request.getRequestDispatcher("/success.jsp").forward(request, response);
         }
-        
-        
-
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -69,7 +66,7 @@ public class RegisterController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+        processRequest(request, response);
     }
 
     /**
@@ -83,6 +80,7 @@ public class RegisterController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        processRequest(request, response);
     }
 
     /**

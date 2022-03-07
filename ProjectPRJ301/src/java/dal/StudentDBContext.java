@@ -13,10 +13,10 @@ public class StudentDBContext extends DBContext{
     public void insertStudent(String firstName, String lastName, String dob, int gender, String address,
                                 String phoneNumber, String email, int specializedId, int campusId ) {
         try {
-            String spl = "INSERT INTO Student(firstName, lastName, dob, gender, address, phoneNumber, email, specializedId, campusId) "
+            String sql = "INSERT INTO Student(firstName, lastName, dob, gender, address, phoneNumber, email, specializedId, campusId)"
                     + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
             
-            PreparedStatement stm = connection.prepareStatement(spl);
+            PreparedStatement stm = connection.prepareStatement(sql);
             stm.setString(1, firstName);
             stm.setString(2, lastName);
             stm.setString(3, dob);
@@ -26,6 +26,7 @@ public class StudentDBContext extends DBContext{
             stm.setString(7, email);
             stm.setInt(8, specializedId);
             stm.setInt(9, campusId);
+            stm.executeUpdate();
             stm.close();
             connection.close();
         } catch (SQLException ex) {
