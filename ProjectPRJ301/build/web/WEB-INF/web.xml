@@ -8,6 +8,18 @@
         <servlet-name>RegisterController</servlet-name>
         <servlet-class>Controller.student.RegisterController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AccademicLoginController</servlet-name>
+        <servlet-class>Controller.Academic.AccademicLoginController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ShowListRegisterController</servlet-name>
+        <servlet-class>Controller.Academic.ShowListRegisterController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ShowRegisterController</servlet-name>
+        <servlet-class>Controller.Academic.ShowRegisterController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CampusController</servlet-name>
         <url-pattern>/campus</url-pattern>
@@ -15,6 +27,18 @@
     <servlet-mapping>
         <servlet-name>RegisterController</servlet-name>
         <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AccademicLoginController</servlet-name>
+        <url-pattern>/academic/login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShowListRegisterController</servlet-name>
+        <url-pattern>/academic/ShowListRegisterController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShowRegisterController</servlet-name>
+        <url-pattern>/academic/ShowRegisterController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

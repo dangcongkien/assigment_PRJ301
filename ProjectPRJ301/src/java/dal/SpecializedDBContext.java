@@ -10,25 +10,24 @@ import java.util.logging.Logger;
  *
  * @author Admin
  */
-public class AccountDBContext extends DBContext{
+public class SpecializedDBContext extends DBContext{
     
-    public String getAccount(String username) {
+    public String getSpecialized(int specializedId) {
         try {
-            String sql = "SELECT password FROM Account WHERE username = ?";
+            String sql = "SELECT code FROM Specialized WHERE id = ?";
             PreparedStatement stm = connection.prepareStatement(sql);
-            stm.setString(1, username);
+            stm.setInt(1, specializedId);
             ResultSet rs = stm.executeQuery();
             while (rs.next()) {
-                String password = rs.getString(1);
-                return password;
+                String code = rs.getString(1);
+                return code;
             }
             rs.close();
             stm.close();
             connection.close();
         } catch (SQLException ex) {
-            Logger.getLogger(AccountDBContext.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SpecializedDBContext.class.getName()).log(Level.SEVERE, null, ex);
         }
         return null;
-        
     }
 }

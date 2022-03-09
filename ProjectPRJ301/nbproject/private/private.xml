@@ -3,13 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Admin/OneDrive/Documents/NetBeansProjects/ProjectPRJ301/src/java/dal/DBContext.java</file>
-            <file>file:/C:/Users/Admin/OneDrive/Documents/NetBeansProjects/ProjectPRJ301/web/error.jsp</file>
-            <file>file:/C:/Users/Admin/OneDrive/Documents/NetBeansProjects/ProjectPRJ301/web/register.jsp</file>
-            <file>file:/C:/Users/Admin/OneDrive/Documents/NetBeansProjects/ProjectPRJ301/src/java/Controller/student/RegisterController.java</file>
-            <file>file:/C:/Users/Admin/OneDrive/Documents/NetBeansProjects/ProjectPRJ301/src/java/Controller/student/CampusController.java</file>
-            <file>file:/C:/Users/Admin/OneDrive/Documents/NetBeansProjects/ProjectPRJ301/web/selectcampus.jsp</file>
-            <file>file:/C:/Users/Admin/OneDrive/Documents/NetBeansProjects/ProjectPRJ301/src/java/dal/StudentDBContext.java</file>
+            <file>file:/C:/Users/Admin/OneDrive/Documents/NetBeansProjects/ProjectPRJ301/web/style.css</file>
+            <file>file:/C:/Users/Admin/OneDrive/Documents/NetBeansProjects/ProjectPRJ301/web/academic/login.jsp</file>
         </group>
     </open-files>
 </project-private>

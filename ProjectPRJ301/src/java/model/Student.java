@@ -22,6 +22,23 @@ public class Student {
     private int campusId;
     private int parentId;
 
+    public Student(int id, String firstName, String lastName, Date dob, boolean gender, int cardNo, Date cardDate, String cardPlace, String address, int phoneNumber, String email, int specializedId, int campusId, int parentId) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = dob;
+        this.gender = gender;
+        this.cardNo = cardNo;
+        this.cardDate = cardDate;
+        this.cardPlace = cardPlace;
+        this.address = address;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+        this.specializedId = specializedId;
+        this.campusId = campusId;
+        this.parentId = parentId;
+    }
+
     public int getId() {
         return id;
     }
@@ -133,6 +150,8 @@ public class Student {
     public void setParentId(int parentId) {
         this.parentId = parentId;
     }
+    
+    
     
     
 }
