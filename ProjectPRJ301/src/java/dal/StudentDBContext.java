@@ -138,4 +138,45 @@ public class StudentDBContext extends DBContext{
         }
         return null;
     }
+    
+    public void acceptStudent(String firstName, String lastName, String dob,
+            int gender, String address, String phoneNumber, String email,
+            int specializedId, int studentId) {
+        
+        try {
+            String sql = "UPDATE Student SET firstName = ?, lastName = ?, dob = ?, \n" +
+                    "gender = ?, address = ?, parentId = ?, email = ?, specializedId = ? WHERE id = ?";
+            
+            PreparedStatement stm = connection.prepareStatement(sql);
+            stm.setString(1, firstName);
+            stm.setString(2, lastName);
+            stm.setString(3, dob);
+            stm.setInt(4, gender);
+            stm.setString(5, address);
+            stm.setString(6, phoneNumber);
+            stm.setString(7, email);
+            stm.setInt(8, specializedId);
+            stm.setInt(9, studentId);
+            stm.executeUpdate();
+            stm.close();
+            connection.close();
+        } catch (SQLException ex) {
+            Logger.getLogger(StudentDBContext.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+    }
+    
+    public void deleteStudent(String id) {
+        try {
+            String sql = "DELETE FROM Student WHERE id = ?";
+            PreparedStatement stm = connection.prepareStatement(sql);
+            stm.setString(1, id);
+            stm.executeUpdate();
+            stm.close();
+            connection.close();
+        } catch (SQLException ex) {
+            Logger.getLogger(StudentDBContext.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return;
+    }
 }
