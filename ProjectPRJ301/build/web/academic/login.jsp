@@ -9,10 +9,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        <title>Login</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
               crossorigin="anonymous">
         <link href="../style.css" rel="stylesheet" type="text/css"/>
+        
     </head>
     <body>
         <div class="container">
@@ -28,7 +29,7 @@
                         <label>Password</label>
                         <input type="password" class="form-control" placeholder="Enter password" name="password"/>
                     </div>
-                    <button type="submit" class="btn-login btn btn-primary">Login</button>
+                    <button type="submit" class="btn btn-primary btn-login">Login</button>
                 </form>
             </div>
         </div>

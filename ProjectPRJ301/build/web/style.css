@@ -3,8 +3,24 @@
     Author     : Admin
 */
 
+body {
+    background-color: #B2ACAA !important;
+}
+
+.container-form {
+  width: 80%;
+  margin: 50px auto 50px auto;
+  background-color: white;
+  border-radius: 15px;
+  padding: 60px;
+}
+
 .error {
     color: red;
+}
+
+.register-success {
+    color: green;
 }
 
 .container-login {
@@ -13,4 +29,12 @@
   background-color: white;
   border-radius: 15px;
   padding: 60px;
+}
+
+.success {
+    color: green;
+}
+
+.btn-register {
+    margin-top: 20px;
 }

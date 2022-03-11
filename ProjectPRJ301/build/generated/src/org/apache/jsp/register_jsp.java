@@ -47,7 +47,8 @@ public final class register_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
       out.write("        <title>Register</title>\n");
-      out.write("        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">\n");
+      out.write("        <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3\" \n");
+      out.write("              crossorigin=\"anonymous\">\n");
       out.write("        <link href=\"../style.css\" rel=\"stylesheet\" type=\"text/css\"/>\n");
       out.write("    </head>\n");
       out.write("    \n");
@@ -99,7 +100,7 @@ public final class register_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                            <option value=\"6\">Artificial intelligence</option>\n");
       out.write("                        </select>\n");
       out.write("                    </div>\n");
-      out.write("                    <button type=\"submit\" class=\"btn btn-primay\">register</button>\n");
+      out.write("                    <button type=\"submit\" class=\"btn btn-primary\">register</button>\n");
       out.write("                </form>\n");
       out.write("            </div>\n");
       out.write("        </div>\n");

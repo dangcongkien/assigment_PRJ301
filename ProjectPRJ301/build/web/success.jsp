@@ -9,15 +9,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
               crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
         <title>JSP Page</title>
     </head>
     <body>
         
         <div class="container">
             <div class="container-form">
-                <h1 class="register-success">${success}</h1>
+                <h1 class="success" style="color: green">${success}</h1>
             </div>
         </div>
     </body>

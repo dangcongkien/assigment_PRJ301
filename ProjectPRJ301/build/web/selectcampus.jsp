@@ -9,10 +9,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
               crossorigin="anonymous">
-        <title>JSP Page</title>
-        <link href="../style.css" rel="stylesheet" type="text/css"/>
+        <title>Select Campus</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div class="container">
@@ -30,7 +30,7 @@
                             <option value="8">FU-Cần Thơ</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-primay my-botton">Next</button>
+                    <button type="submit" class="btn btn-primary">Next</button>
                 </form>
             </div>
         </div>

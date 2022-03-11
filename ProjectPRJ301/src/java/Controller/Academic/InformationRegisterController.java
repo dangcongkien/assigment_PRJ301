@@ -51,7 +51,7 @@ public class InformationRegisterController extends HttpServlet {
             if(membercode == null || membercode.isEmpty() || mode == null || mode.isEmpty()
                     || enrollDate == null) {
                 request.setAttribute("error", "You need to enter enroll date");
-                request.getRequestDispatcher("../academic/error.jsp").forward(request, response);
+                request.getRequestDispatcher("/academic/error.jsp").forward(request, response);
             } else {
                 int genders = Integer.parseInt(gender);
                 int id = Integer.parseInt(studentId);
@@ -65,6 +65,8 @@ public class InformationRegisterController extends HttpServlet {
                 response.sendRedirect("../academic/listregister.jsp");
             }
         } catch (Exception e) {
+            request.setAttribute("error", "You need to enter enroll date");
+            request.getRequestDispatcher("../academic/error.jsp").forward(request, response);
         }
     }
     

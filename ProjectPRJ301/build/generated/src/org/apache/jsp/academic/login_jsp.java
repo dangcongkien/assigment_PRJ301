@@ -1,10 +1,10 @@
-package org.apache.jsp;
+package org.apache.jsp.academic;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class selectcampus_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -48,33 +48,32 @@ public final class selectcampus_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("<html>\n");
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3\" \n");
+      out.write("        <title>Login</title>\n");
+      out.write("        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\"\n");
       out.write("              crossorigin=\"anonymous\">\n");
-      out.write("        <title>Select Campus</title>\n");
-      out.write("        <link href=\"style.css\" rel=\"stylesheet\">\n");
+      out.write("        <link href=\"../style.css\" rel=\"stylesheet\" type=\"text/css\"/>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
       out.write("        <div class=\"container\">\n");
-      out.write("            <div class=\"container-form\">\n");
+      out.write("            <div class=\"container-login\">\n");
       out.write("                <h4 class=\"error\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${error}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("</h4>\n");
-      out.write("                <h1>FPT University</h1>\n");
-      out.write("                <hr/>\n");
-      out.write("                <form action=\"campus\" method=\"POST\">\n");
+      out.write("                <h1>Login</h1>\n");
+      out.write("                <form action=\"login\" method=\"POST\">\n");
       out.write("                    <div class=\"form-group\">\n");
-      out.write("                        <label>Select Campus</label>\n");
-      out.write("                        <select class=\"form-control\" name=\"campusId\">\n");
-      out.write("                            <option value=\"5\">FU-Hòa Lạc</option>\n");
-      out.write("                            <option value=\"6\">FU-Hồ Chí Minh</option>\n");
-      out.write("                            <option value=\"7\">FU-Đà Năng</option>\n");
-      out.write("                            <option value=\"8\">FU-Cần Thơ</option>\n");
-      out.write("                        </select>\n");
+      out.write("                        <label>Username</label>\n");
+      out.write("                        <input type=\"text\" class=\"form-control\" placeholder=\"Enter username\" name=\"username\"/>\n");
       out.write("                    </div>\n");
-      out.write("                    <button type=\"submit\" class=\"btn btn-primay my-botton\">Next</button>\n");
+      out.write("                    <div>\n");
+      out.write("                        <label>Password</label>\n");
+      out.write("                        <input type=\"password\" class=\"form-control\" placeholder=\"Enter password\" name=\"password\"/>\n");
+      out.write("                    </div>\n");
+      out.write("                    <button type=\"submit\" class=\"btn-login btn btn-primary\">Login</button>\n");
       out.write("                </form>\n");
       out.write("            </div>\n");
       out.write("        </div>\n");
+      out.write("        \n");
       out.write("    </body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {
