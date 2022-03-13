@@ -51,7 +51,7 @@ public final class selectcampus_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("        <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3\" \n");
       out.write("              crossorigin=\"anonymous\">\n");
       out.write("        <title>Select Campus</title>\n");
-      out.write("        <link href=\"style.css\" rel=\"stylesheet\">\n");
+      out.write("        <link href=\"style.css\" rel=\"stylesheet\" type=\"text/css\"/>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
       out.write("        <div class=\"container\">\n");
@@ -71,7 +71,7 @@ public final class selectcampus_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("                            <option value=\"8\">FU-Cần Thơ</option>\n");
       out.write("                        </select>\n");
       out.write("                    </div>\n");
-      out.write("                    <button type=\"submit\" class=\"btn btn-primay my-botton\">Next</button>\n");
+      out.write("                    <button type=\"submit\" class=\"btn btn-primary btn-campus\">Next</button>\n");
       out.write("                </form>\n");
       out.write("            </div>\n");
       out.write("        </div>\n");

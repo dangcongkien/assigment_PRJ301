@@ -4,7 +4,7 @@
 */
 
 body {
-    background-color: #B2ACAA !important;
+    background-color: #e8e8e8 !important;
 }
 
 .container-form {
@@ -15,12 +15,18 @@ body {
   padding: 60px;
 }
 
-.error {
-    color: red;
+.form-general {
+    margin: 10px auto;
 }
 
-.register-success {
+.error {
+    color: red;
+    text-align: center;
+}
+
+.success {
     color: green;
+    text-align: center;
 }
 
 .container-login {
@@ -36,5 +42,26 @@ body {
 }
 
 .btn-register {
-    margin-top: 20px;
+    margin: 10px auto;
+}
+
+.btn-campus {
+    margin: 10px auto;
+}
+
+.btn-login {
+    margin: 10px auto;
+}
+
+.check-btn {
+    color: #fff;
+    margin-left: 10px;
+}
+
+.btn-academic {
+    width: 80px;
+}
+
+.btn-academic:last-child {
+    margin-left: 10px;
 }

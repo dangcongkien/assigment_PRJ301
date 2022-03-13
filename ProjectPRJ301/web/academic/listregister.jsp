@@ -34,7 +34,7 @@
                         <form action="ShowRegisterController" method="POST">
                             <li class="list-group-item">${student.firstName} ${student.lastName}
                                 <input type="hidden" value="${student.id}" name="studentId" />
-                                <button type="submit" class="btn btn-info">Check</button>
+                                <button type="submit" class="btn btn-info check-btn">Check</button>
                             </li>
                         </form>
                     </c:forEach>

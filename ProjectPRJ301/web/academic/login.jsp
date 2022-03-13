@@ -21,11 +21,11 @@
                 <h4 class="error">${error}</h4>
                 <h1>Login</h1>
                 <form action="login" method="POST">
-                    <div class="form-group">
+                    <div class="form-group form-general">
                         <label>Username</label>
                         <input type="text" class="form-control" placeholder="Enter username" name="username"/>
                     </div>
-                    <div>
+                    <div class="form-group form-general">
                         <label>Password</label>
                         <input type="password" class="form-control" placeholder="Enter password" name="password"/>
                     </div>

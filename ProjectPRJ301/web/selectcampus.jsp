@@ -30,7 +30,7 @@
                             <option value="8">FU-Cần Thơ</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-primary">Next</button>
+                    <button type="submit" class="btn btn-primary btn-campus">Next</button>
                 </form>
             </div>
         </div>

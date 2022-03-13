@@ -22,38 +22,38 @@
                 <h1>Information Register</h1>
                 <hr>
                 <form action="inforregister" method="POST">
-                    <div class="form-group">
+                    <div class="form-group form-general">
                         <label>First Name</label>
                         <input type="text" class="form-control" value="${student.firstName}" name="firstName">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group form-general">
                         <label>Last Name</label>
                         <input type="text" class="form-control" value="${student.lastName}" name="lastName">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group form-general">
                         <label>Date Of Birth</label>
                         <input type="date" class="form-control" value="${student.dob}" name="dob">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group form-general">
                         <label>Gender</label>
                         <div>
                             <input type="radio" name="gender" value="1" class="gender"<c:if test="${student.gender == true}">checked</c:if>> Male
                             <input type="radio" name="gender" value="0" class="gender"<c:if test="${student.gender == false}">checked</c:if>>Female
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group form-general">
                             <label>Address</label>
                             <input type="text" class="form-control" value="${student.address}" name="address">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group form-general">
                         <label>Phone number</label>
                         <input type="text" class="form-control" value="${student.phoneNumber}" name="phoneNumber">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group form-general">
                         <label>Email</label>
                         <input type="email" class="form-control" value="${student.email}" name="email">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group form-general">
                         <label>Specialized</label>
                         <select class="form-control" name="specialized">
                             <option value="SE" <c:if test="${student.specializedId == 4}">selected</c:if>>Software engineering</option>
@@ -63,26 +63,26 @@
                         </div>
                         <br>
                         <h3>Acadamic Staff</h3><hr>
-                        <div class="form-group">
+                        <div class="form-group form-general">
                             <label>Roll Number</label>
                             <input type="text" class="form-control" value="${campusName}${student.id}" name="rollNumber" disabled>
                         </div>
                         
-                        <div class="form-group">
+                        <div class="form-group form-general">
                             <label>Member Code</label>
                             <input type="text" class="form-control"  name="membercode" value="${nameStudent}${specialized}${student.id}">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group form-general">
                             <label>Enroll Date</label>
                             <input type="date" class="form-control"  name="enrolldate">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group form-general">
                             <label>Mode</label>
                             <input type="text" class="form-control"  name="mode">
                         </div>
                         <input type="hidden" name="studentId" value="${student.id}"/>
-                        <button type="submit" class="btn btn-success botton-academic" >Accept</button>
-                        <button type="submit" class="btn btn-danger botton-academic btn-reject" formaction="RejectRegisterController">Reject</button>
+                        <button type="submit" class="btn btn-success btn-academic" >Accept</button>
+                        <button type="submit" class="btn btn-danger btn-academic btn-reject" formaction="RejectRegisterController">Reject</button>
                 </form>
             </div>
         </div>

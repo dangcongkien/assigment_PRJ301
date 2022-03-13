@@ -18,7 +18,7 @@
         
         <div class="container">
             <div class="container-form">
-                <h1 class="success" style="color: green">${success}</h1>
+                <h1 class="success">${success}</h1>
             </div>
         </div>
     </body>
