@@ -48,6 +48,7 @@ public final class selectcampus_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("<html>\n");
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <link rel=\"icon\" href=\"img/LogoFPT.jpg\">\n");
       out.write("        <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3\" \n");
       out.write("              crossorigin=\"anonymous\">\n");
       out.write("        <title>Select Campus</title>\n");
@@ -59,7 +60,12 @@ public final class selectcampus_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("                <h4 class=\"error\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${error}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("</h4>\n");
-      out.write("                <h1>FPT University</h1>\n");
+      out.write("                \n");
+      out.write("                <div class=\"heading\">\n");
+      out.write("                    <h1>FPT University</h1>\n");
+      out.write("                    \n");
+      out.write("                    <img src=\"img/LogoFPT.jpg\" alt=\"FPT logo\" class=\"img-heading\"/>\n");
+      out.write("                </div>\n");
       out.write("                <hr/>\n");
       out.write("                <form action=\"campus\" method=\"POST\">\n");
       out.write("                    <div class=\"form-group\">\n");
