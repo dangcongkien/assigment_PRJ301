@@ -36,7 +36,8 @@ public class RejectRegisterController extends HttpServlet {
         StudentDBContext stDB = new StudentDBContext();
         stDB.deleteStudent(studentId);
         
-        response.sendRedirect("../academic/listregister.jsp");
+        response.sendRedirect("ShowListRegisterController");
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

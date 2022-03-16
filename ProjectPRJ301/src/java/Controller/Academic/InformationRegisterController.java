@@ -48,9 +48,9 @@ public class InformationRegisterController extends HttpServlet {
         
         try {
             enrollDate = Date.valueOf(request.getParameter("enrolldate"));
-            if(membercode == null || membercode.isEmpty() || mode == null || mode.isEmpty()
+            if(membercode == null || membercode.trim().isEmpty() || mode == null || mode.trim().isEmpty()
                     || enrollDate == null) {
-                request.setAttribute("error", "You need to enter enroll date");
+                request.setAttribute("error", "You need to enter enroll date and mode");
                 request.getRequestDispatcher("/academic/error.jsp").forward(request, response);
             } else {
                 int genders = Integer.parseInt(gender);
@@ -59,13 +59,17 @@ public class InformationRegisterController extends HttpServlet {
                 StudentDBContext db = new StudentDBContext();
                 db.acceptStudent(firstName, lastName, dob, genders, address,
                         phoneNumber, membercode + "@fpt.edu.vn", getSpecializedId(specialized), id);
-                AcademicDBContext acbb = new AcademicDBContext();
-                acbb.insertStudent(rollNumner, membercode, mode, enrollDate, id);
+                AcademicDBContext acdb = new AcademicDBContext();
+                acdb.insertStudent(rollNumner, membercode, mode, enrollDate, id);
                 
-                response.sendRedirect("../academic/listregister.jsp");
+                /**
+                 * Mai check lại
+                 */
+                response.sendRedirect("ShowListRegisterController");
+                
             }
         } catch (Exception e) {
-            request.setAttribute("error", "You need to enter enroll date");
+            request.setAttribute("error", "You need to enter enroll date and mode");
             request.getRequestDispatcher("../academic/error.jsp").forward(request, response);
         }
     }

@@ -30,15 +30,15 @@
                 <form action="inforregister" method="POST">
                     <div class="form-group form-general">
                         <label>First Name</label>
-                        <input type="text" class="form-control" value="${student.firstName}" name="firstName">
+                        <input type="text" class="form-control" value="${student.firstName}" name="firstName" disabled>
                     </div>
                     <div class="form-group form-general">
                         <label>Last Name</label>
-                        <input type="text" class="form-control" value="${student.lastName}" name="lastName">
+                        <input type="text" class="form-control" value="${student.lastName}" name="lastName" disabled>
                     </div>
                     <div class="form-group form-general">
                         <label>Date Of Birth</label>
-                        <input type="date" class="form-control" value="${student.dob}" name="dob">
+                        <input type="date" class="form-control" value="${student.dob}" name="dob" disabled>
                     </div>
                     <div class="form-group form-general">
                         <label>Gender</label>
@@ -49,19 +49,19 @@
                         </div>
                         <div class="form-group form-general">
                             <label>Address</label>
-                            <input type="text" class="form-control" value="${student.address}" name="address">
+                            <input type="text" class="form-control" value="${student.address}" name="address" disabled>
                     </div>
                     <div class="form-group form-general">
                         <label>Phone number</label>
-                        <input type="text" class="form-control" value="${student.phoneNumber}" name="phoneNumber">
+                        <input type="text" class="form-control" value="${student.phoneNumber}" name="phoneNumber" disabled>
                     </div>
                     <div class="form-group form-general">
                         <label>Email</label>
-                        <input type="email" class="form-control" value="${student.email}" name="email">
+                        <input type="email" class="form-control" value="${student.email}" name="email" disabled>
                     </div>
                     <div class="form-group form-general">
                         <label>Specialized</label>
-                        <select class="form-control" name="specialized">
+                        <select class="form-control" name="specialized" disabled>
                             <option value="SE" <c:if test="${student.specializedId == 4}">selected</c:if>>Software engineering</option>
                             <option value="AI" <c:if test="${student.specializedId == 5}">selected</c:if>>Artificial intelligence</option>
                             <option value="BA" <c:if test="${student.specializedId == 6}">selected</c:if>>Business administration</option>
@@ -76,7 +76,7 @@
                         
                         <div class="form-group form-general">
                             <label>Member Code</label>
-                            <input type="text" class="form-control"  name="membercode" value="${nameStudent}${specialized}${student.id}">
+                            <input type="text" class="form-control"  name="membercode" value="${nameStudent}${specialized}${student.id}" disabled>
                         </div>
                         <div class="form-group form-general">
                             <label>Enroll Date</label>
