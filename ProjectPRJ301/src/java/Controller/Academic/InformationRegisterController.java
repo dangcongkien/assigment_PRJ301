@@ -17,15 +17,6 @@ import javax.servlet.http.HttpSession;
  */
 public class InformationRegisterController extends HttpServlet {
 
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -48,9 +39,8 @@ public class InformationRegisterController extends HttpServlet {
         
         try {
             enrollDate = Date.valueOf(request.getParameter("enrolldate"));
-            if(membercode == null || membercode.trim().isEmpty() || mode == null || mode.trim().isEmpty()
-                    || enrollDate == null) {
-                request.setAttribute("error", "You need to enter enroll date and mode");
+            if(mode == null || mode.trim().isEmpty() || enrollDate == null) {
+                request.setAttribute("error", "You need to enter Enroll Date and Mode");
                 request.getRequestDispatcher("/academic/error.jsp").forward(request, response);
             } else {
                 int genders = Integer.parseInt(gender);
@@ -62,14 +52,11 @@ public class InformationRegisterController extends HttpServlet {
                 AcademicDBContext acdb = new AcademicDBContext();
                 acdb.insertStudent(rollNumner, membercode, mode, enrollDate, id);
                 
-                /**
-                 * Mai check lại
-                 */
                 response.sendRedirect("ShowListRegisterController");
                 
             }
         } catch (Exception e) {
-            request.setAttribute("error", "You need to enter enroll date and mode");
+            request.setAttribute("error", "You need to enter Enroll Date and Mode");
             request.getRequestDispatcher("../academic/error.jsp").forward(request, response);
         }
     }

@@ -79,3 +79,11 @@ body {
     height: 100px; 
     width: 140px;
 }
+
+label {
+    margin: 10px 0 6px 0;
+}
+
+.infor-register {
+    background-color: #e9ecef;
+}
